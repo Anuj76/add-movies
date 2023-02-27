@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head> 
+<title> Favorite Movie</title>
+<link rel="stylesheet" href="app.css"/>
+<script src="app.js" defer></script>
+</head>
+<body>
+<div id="backdrop"></div>
+<div class="modal card" id="add-modal">
+<div class="modal__content">
+<label for="title">Movie Title</label>
+<input type="text" name="title" id="title"/>
+<label for="image-url">Image URL</label>
+<input type="text" name="image-url" id="image-url"/>
+<label for="rating">Your Rating</label>
+<input type="number" step="1" max="5" min="1" name="rating" id="rating"/>
+</div>
+<div class="modal__actions">
+<button class="btn btn--passive">Cancle</button>
+<button class="btn btn--success">Add</button>
+</div>
+</div>
+<div  class="modal card" id="delete-modal">
+<h2 class="modal__title"> Are you sure?</h2>
+<p class="modal__content">
+Are you sure Want to delet this item? This action cant be undone!
+</p>
+<div class="modal__actions">
+<button class="btn btn--passive">No(Cancle)</button>
+<button class="btn btn--danger">Yes</button>
+</div>  
+</div>
+
+<header>
+<h1>Favorite Movie</h1>
+<button> Add Movie</button>
+</header>
+
+<main>
+<section id="entry-text" class="card">
+<p>Your Personal Database!</p>
+</section>
+<ul id="movie-list"></ul>
+</main>
+</body>
+</html>
